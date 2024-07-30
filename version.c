@@ -66,7 +66,7 @@ const char ruby_release_date[] = RUBY_RELEASE_DATE;
 const char ruby_platform[] = RUBY_PLATFORM;
 const int ruby_patchlevel = RUBY_PATCHLEVEL;
 const char ruby_description[] =
-    "ruby " RUBY_VERSION RUBY_PATCHLEVEL_STR " "
+    "tu-tu-ruby " RUBY_VERSION RUBY_PATCHLEVEL_STR " "
     "(" RUBY_RELEASE_DATETIME RUBY_REVISION_STR ") "
     "[" RUBY_PLATFORM "]";
 static const int ruby_description_opt_point =
@@ -205,6 +205,9 @@ ruby_show_version(void)
 #ifdef HAVE_MALLOC_CONF
     if (malloc_conf) printf("malloc_conf=%s\n", malloc_conf);
 #endif
+    printf(
+        "TU-TU-RU\n"
+    );
     fflush(stdout);
 }
 
